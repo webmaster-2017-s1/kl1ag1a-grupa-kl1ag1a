@@ -6,8 +6,8 @@ Przeczytaj [instrukcję realizacji zadania](doc/zadanie.md).
 Po uzupełnieniu dokumentu usuń powyższe oraz niniejszy akapit
 i zatwierdź zmiany używając komentarza "Aktualizacja README.md".
 
-# [Wpisz nazwę projektu]
-Implementacja gry [wpisz nazwę] w JavaScript
+# Kółko i krzyżyk
+Implementacja gry kółko i krzżyk w JavaScript
 
 ## Uruchomienie
 [Tu umieść opis kroków pozwalających na uruchomienie projektu]
