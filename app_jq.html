@@ -3,25 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Projekt [wpisz nazwę]</title>
+    <title>Projekt Kółko i krzyżyk</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script> 
     <!-- Umieść favicon.ico w głównym katalogu -->
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script>
+$(document).ready(function(){
+  // jQuery code goes here		
+});
+</script>   
   </head>
   <body>
-    <!--[if lte IE 9]>
-    <p class="browserupgrade">
-        Używasz <strong>przestarzałej</strong> przeglądarki.
-        Zalecamy <a href="https://browsehappy.com/">aktualizację przeglądarki</a>
-        w celu polepszenia obsługi najnowszych standardów i podniesienia poziomu bezpieczeństwa.</p>
-    <![endif]-->
-
-    <!-- Tutaj dodajesz swój kod -->
-    <h1>Projekt [wpisz nazwę]</h1>
+  
+    <h1>Projekt Kółko i krzyżyk</h1>
     <div>
       <ul class="menu">
         <li><a href="index.html">Strona główna</a></li>
@@ -29,9 +27,40 @@
         <li><a href="app_p5.html">Wersja p5js</a></li>
       </ul>
     </div>
+    
+<table id='board'>
+  <tr>
+    <td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td>
+  </tr>
+</table>
 
+<script>
+$(document).ready(function(){
 
+  var move = 1;
+  var play = true;
 
+  $("#board tr td").click(function() {
+    if ($(this).text()=="" && play) {
+      if ((move%2)==1) { $(this).append("X"); } 
+      else { $(this).append("O"); }
+      move++;
+      if (checkForWinner()!=-1 && checkForWinner()!="") { 
+	if (checkForWinner()=="X") { alert("Gracz 1 wygrywa!"); }
+        else { alert("Gracz 2 wygrywa!"); }
+        play = false; 
+      }
+    }
+  });
+
+  
+        </script>
     <!-- skrypt umożliwiający sprawdzanie możliwośći przeglądarki -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <!--biblioteka jQuery-->
