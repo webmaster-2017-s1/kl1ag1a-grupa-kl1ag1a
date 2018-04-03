@@ -318,3 +318,15 @@ table {
   background: #e4e4e4;
   cursor: pointer;
 }
+.menu {
+font-size: 14pt;
+color:#1AADDB;
+font-family: arial, tahoma, verdana, serif;
+}
+.tekst {
+font-size: 14pt;
+color:powderblue;
+font-family: arial, tahoma, verdana, serif;
+}
+
+
