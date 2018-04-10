@@ -3,11 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <email>
-
+    1. Patryk Lewandowski wersja p5 i strona g³ówna lewy91 
+    2. Jakub Drypa wersja jQuery i README Jakub71
+    3. Kacper Kwitek oprawa graficzna KaynMain
+ 
 # THANKS
 
-    <name>
+   Dziêkujemy
 
 # TECHNOLOGY COLOPHON
 

@@ -45,7 +45,7 @@ $(document).ready(function(){
 
   var move = 1;
   var play = true;
-
+// funkcja obsługująca grę
   $("#board tr td").click(function() {
     if ($(this).text()=="" && play) {
       if ((move%2)==1) { $(this).append("X"); } 
@@ -58,7 +58,7 @@ $(document).ready(function(){
       }
     }
   });
-
+// funkcja sprawdzająca kto zwyciężył
   function Sprawdz() {
     var space1 = $("#board tr:nth-child(1) td:nth-child(1)").text();
     var space2 = $("#board tr:nth-child(1) td:nth-child(2)").text();
